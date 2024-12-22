@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Chess.css" />
+    </head>
+    <body>
+        
+        <div> CHESS 
+
+            <button id="newGame" onclick="newGame()">New Game</button>
+
+            <button id="start" onclick="newTurn()">Start</button>
+
+            <div class="timer"></div>
+
+        </div>
+        
+        <div class="overall">
+        <div class="container" id="container">
+            <div class="whiteSquare" id="A8" data-available="false" data-numbered="64"><img src="bRook.png" id="bRook1" class="bPiece" data-moved="false"></div>
+            <div class="blackSquare" id="B8" data-available="false" data-numbered="63"><img src="bKnight.png" id="bKnight1" class="bPiece"></div>
+            <div class="whiteSquare" id="C8" data-available="false" data-numbered="62"><img src="bBishop.png" id="bBishop1" class="bPiece"></div>
+            <div class="blackSquare" id="D8" data-available="false" data-numbered="61"><img src="bQueen.png" id="bQueen" class="bPiece"></div>
+            <div class="whiteSquare" id="E8" data-available="false" data-numbered="60"><img src="bKing.png" id="bKing" class="bPiece" data-moved="false"></div>
+            <div class="blackSquare" id="F8" data-available="false" data-numbered="59"><img src="bBishop.png" id="bBishop2" class="bPiece"></div>
+            <div class="whiteSquare" id="G8" data-available="false" data-numbered="58"><img src="bKnight.png" id="bKnight2" class="bPiece"></div>
+            <div class="blackSquare" id="H8" data-available="false" data-numbered="57"><img src="bRook.png" id="bRook2" class="bPiece" data-moved="false"></div>
+            
+            <div class="blackSquare" id="A7" data-available="false" data-numbered="56"><img src="bPawn.png" id="bPawn1" class="bPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="B7" data-available="false" data-numbered="55"><img src="bPawn.png" id="bPawn2" class="bPiece" data-moved="false"></div>
+            <div class="blackSquare" id="C7" data-available="false" data-numbered="54"><img src="bPawn.png" id="bPawn3" class="bPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="D7" data-available="false" data-numbered="53"><img src="bPawn.png" id="bPawn4" class="bPiece" data-moved="false"></div>
+            <div class="blackSquare" id="E7" data-available="false" data-numbered="52"><img src="bPawn.png" id="bPawn5" class="bPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="F7" data-available="false" data-numbered="51"><img src="bPawn.png" id="bPawn6" class="bPiece" data-moved="false"></div>
+            <div class="blackSquare" id="G7" data-available="false" data-numbered="50"><img src="bPawn.png" id="bPawn7" class="bPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="H7" data-available="false" data-numbered="49"><img src="bPawn.png" id="bPawn8" class="bPiece" data-moved="false"></div>
+
+            <div class="whiteSquare" id="A6" data-available="false" data-numbered="48"></div>
+            <div class="blackSquare" id="B6" data-available="false" data-numbered="47"></div>
+            <div class="whiteSquare" id="C6" data-available="false" data-numbered="46"></div>
+            <div class="blackSquare" id="D6" data-available="false" data-numbered="45"></div>
+            <div class="whiteSquare" id="E6" data-available="false" data-numbered="44"></div>
+            <div class="blackSquare" id="F6" data-available="false" data-numbered="43"></div>
+            <div class="whiteSquare" id="G6" data-available="false" data-numbered="42"></div>
+            <div class="blackSquare" id="H6" data-available="false" data-numbered="41"></div>
+
+            <div class="blackSquare" id="A5" data-available="false" data-numbered="40"></div>
+            <div class="whiteSquare" id="B5" data-available="false" data-numbered="39"></div>
+            <div class="blackSquare" id="C5" data-available="false" data-numbered="38"></div>
+            <div class="whiteSquare" id="D5" data-available="false" data-numbered="37"></div>
+            <div class="blackSquare" id="E5" data-available="false" data-numbered="36"></div>
+            <div class="whiteSquare" id="F5" data-available="false" data-numbered="35"></div>
+            <div class="blackSquare" id="G5" data-available="false" data-numbered="34"></div>
+            <div class="whiteSquare" id="H5" data-available="false" data-numbered="33"></div>
+
+            <div class="whiteSquare" id="A4" data-available="false" data-numbered="32"></div>
+            <div class="blackSquare" id="B4" data-available="false" data-numbered="31"></div>
+            <div class="whiteSquare" id="C4" data-available="false" data-numbered="30"></div>
+            <div class="blackSquare" id="D4" data-available="false" data-numbered="29"></div>
+            <div class="whiteSquare" id="E4" data-available="false" data-numbered="28"></div>
+            <div class="blackSquare" id="F4" data-available="false" data-numbered="27"></div>
+            <div class="whiteSquare" id="G4" data-available="false" data-numbered="26"></div>
+            <div class="blackSquare" id="H4" data-available="false" data-numbered="25"></div>
+
+            <div class="blackSquare" id="A3" data-available="false" data-numbered="24"></div>
+            <div class="whiteSquare" id="B3" data-available="false" data-numbered="23"></div>
+            <div class="blackSquare" id="C3" data-available="false" data-numbered="22"></div>
+            <div class="whiteSquare" id="D3" data-available="false" data-numbered="21"></div>
+            <div class="blackSquare" id="E3" data-available="false" data-numbered="20"></div>
+            <div class="whiteSquare" id="F3" data-available="false" data-numbered="19"></div>
+            <div class="blackSquare" id="G3" data-available="false" data-numbered="18"></div>
+            <div class="whiteSquare" id="H3" data-available="false" data-numbered="17"></div>
+
+            <div class="whiteSquare" id="A2" data-available="false" data-numbered="16"><img src="wPawn.png" id="wPawn1" class="wPiece" data-moved="false"></div>
+            <div class="blackSquare" id="B2" data-available="false" data-numbered="15"><img src="wPawn.png" id="wPawn2" class="wPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="C2" data-available="false" data-numbered="14"><img src="wPawn.png" id="wPawn3" class="wPiece" data-moved="false"></div>
+            <div class="blackSquare" id="D2" data-available="false" data-numbered="13"><img src="wPawn.png" id="wPawn4" class="wPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="E2" data-available="false" data-numbered="12"><img src="wPawn.png" id="wPawn5" class="wPiece" data-moved="false"></div>
+            <div class="blackSquare" id="F2" data-available="false" data-numbered="11"><img src="wPawn.png" id="wPawn6" class="wPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="G2" data-available="false" data-numbered="10"><img src="wPawn.png" id="wPawn7" class="wPiece" data-moved="false"></div>
+            <div class="blackSquare" id="H2" data-available="false" data-numbered="9"><img src="wPawn.png" id="wPawn8" class="wPiece" data-moved="false"></div>
+
+            <div class="blackSquare" id="A1" data-available="false" data-numbered="8"><img src="wRook.png" id="wRook1" class="wPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="B1" data-available="false" data-numbered="7"><img src="wKnight.png" id="wKnight1" class="wPiece"></div>
+            <div class="blackSquare" id="C1" data-available="false" data-numbered="6"><img src="wBishop.png" id="wBishop1" class="wPiece"></div>
+            <div class="whiteSquare" id="D1" data-available="false" data-numbered="5"><img src="wQueen.png" id="wQueen" class="wPiece"></div>
+            <div class="blackSquare" id="E1" data-available="false" data-numbered="4"><img src="wKing.png" id="wKing" class="wPiece" data-moved="false"></div>
+            <div class="whiteSquare" id="F1" data-available="false" data-numbered="3"><img src="wBishop.png" id="wBishop2" class="wPiece"></div>
+            <div class="blackSquare" id="G1" data-available="false" data-numbered="2"><img src="wKnight.png" id="wKnight2" class="wPiece"></div>
+            <div class="whiteSquare" id="H1" data-available="false" data-numbered="1"><img src="wRook.png" id="wRook2" class="wPiece" data-moved="false"></div>
+
+        </div>
+        <div id="logContainer">
+            Game Log
+            <div id="gameLog">
+                
+            </div>
+            <button id="castle" onclick="castle()">Castle</button>
+        </div>
+        </div>
+        <div id="graveyard">
+
+        </div>
+
+        <script src="Chess.js"></script>
+        
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>

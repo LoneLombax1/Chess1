@@ -1,0 +1,378 @@
+.whiteSquare {
+    width:60px;
+    height:60px;
+    background-color: white;
+    float:left;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+.blackSquare {
+    width:60px;
+    height:60px;
+    background-color: black;
+    float:left;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+.overall {
+    display: flex;
+    width: 690px;
+    height: 490px;
+    align-items: center;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: red;
+    width: 480px;
+    height: 480px;
+    border: 2px solid black;
+    align-items: center;
+}
+
+#graveyard {
+    display:none
+}
+
+#logContainer {
+    width: 200px;
+    height: 480px;
+    background-color: grey;
+    float: right;
+    float: top;
+}
+
+#gameLog {
+    height:460px;
+    overflow: auto;
+}
+
+#castle {
+    position: relative;
+    display: none;
+}
+
+#wPawn1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+
+}
+
+#wPawn2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn3 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn4 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn5 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn6 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn7 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wPawn8 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wKing {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wQueen {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wRook1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wRook2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wBishop1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wBishop2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wKnight1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#wKnight2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn3 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn4 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn5 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn6 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn7 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bPawn8 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bKing {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bQueen {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bRook1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bRook2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bBishop1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bBishop2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bKnight1 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
+#bKnight2 {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1500ms;
+}
+
